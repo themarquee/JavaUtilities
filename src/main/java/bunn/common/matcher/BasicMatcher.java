@@ -1,6 +1,6 @@
-package com.thednaisgood.common.matcher;
+package bunn.common.matcher;
 
-import com.thednaisgood.common.utility.GeneralTools;
+import bunn.common.tools.GeneralTools;
 
 public class BasicMatcher<T> implements Matcher<T> {
 

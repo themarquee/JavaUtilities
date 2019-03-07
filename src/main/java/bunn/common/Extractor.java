@@ -1,4 +1,4 @@
-package com.thednaisgood.common;
+package bunn.common;
 
 /**
  * Interface for defining singleton classes used for retrieving aggregates within an Object.

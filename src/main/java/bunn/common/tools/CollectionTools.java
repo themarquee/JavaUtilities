@@ -1,10 +1,10 @@
-package com.thednaisgood.common.utility;
+package bunn.common.tools;
 
 import java.util.Collection;
 
-import com.thednaisgood.common.Converter;
-import com.thednaisgood.common.helper.CollectionHelper;
-import com.thednaisgood.common.matcher.Matcher;
+import bunn.common.Converter;
+import bunn.common.helper.CollectionHelper;
+import bunn.common.matcher.Matcher;
 
 public class CollectionTools {
 

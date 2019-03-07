@@ -1,4 +1,4 @@
-package com.thednaisgood.common.matcher;
+package bunn.common.matcher;
 
 public interface Matcher<T> {
 

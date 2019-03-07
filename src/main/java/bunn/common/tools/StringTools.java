@@ -1,4 +1,4 @@
-package com.thednaisgood.common.utility;
+package bunn.common.tools;
 
 import org.apache.commons.lang3.StringUtils;
 

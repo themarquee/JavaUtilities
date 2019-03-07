@@ -1,4 +1,4 @@
-package com.thednaisgood.common;
+package bunn.common;
 
 public interface Visitor<O> {
 

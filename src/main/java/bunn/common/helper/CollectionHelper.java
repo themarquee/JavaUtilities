@@ -1,13 +1,13 @@
-package com.thednaisgood.common.helper;
+package bunn.common.helper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-import com.thednaisgood.common.Converter;
-import com.thednaisgood.common.Visitor;
-import com.thednaisgood.common.matcher.Matcher;
-import com.thednaisgood.common.utility.GeneralTools;
+import bunn.common.Converter;
+import bunn.common.Visitor;
+import bunn.common.matcher.Matcher;
+import bunn.common.tools.GeneralTools;
 
 public class CollectionHelper<O> {
 

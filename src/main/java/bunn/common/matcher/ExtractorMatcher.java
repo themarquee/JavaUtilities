@@ -1,9 +1,9 @@
-package com.thednaisgood.common.matcher;
+package bunn.common.matcher;
 
 import java.util.Collection;
 
-import com.thednaisgood.common.Extractor;
-import com.thednaisgood.common.utility.CollectionTools;
+import bunn.common.Extractor;
+import bunn.common.tools.CollectionTools;
 
 public class ExtractorMatcher<T, O> implements Matcher<O> {
 	private Extractor<T, O> candidateExtractor;

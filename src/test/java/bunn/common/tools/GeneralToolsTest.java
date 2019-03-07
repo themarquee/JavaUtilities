@@ -1,11 +1,11 @@
-package com.thednaisgood.common.test;
+package bunn.common.tools;
 
-import static com.thednaisgood.common.utility.GeneralTools.collectionToArray;
-import static com.thednaisgood.common.utility.GeneralTools.hasItems;
-import static com.thednaisgood.common.utility.GeneralTools.hasNItems;
-import static com.thednaisgood.common.utility.GeneralTools.hasNoItems;
-import static com.thednaisgood.common.utility.GeneralTools.hasOneItem;
-import static com.thednaisgood.common.utility.GeneralTools.parseInteger;
+import static bunn.common.tools.GeneralTools.collectionToArray;
+import static bunn.common.tools.GeneralTools.hasItems;
+import static bunn.common.tools.GeneralTools.hasNItems;
+import static bunn.common.tools.GeneralTools.hasNoItems;
+import static bunn.common.tools.GeneralTools.hasOneItem;
+import static bunn.common.tools.GeneralTools.parseInteger;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -18,7 +18,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-public class CommonUtilsTest {
+public class GeneralToolsTest {
 
 	@Test
 	public void hasItems_list_positive() {

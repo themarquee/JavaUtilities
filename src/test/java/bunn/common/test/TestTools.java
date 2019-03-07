@@ -1,4 +1,4 @@
-package com.thednaisgood.common.test;
+package bunn.common.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

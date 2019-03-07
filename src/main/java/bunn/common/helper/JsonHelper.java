@@ -1,4 +1,4 @@
-package com.thednaisgood.common.helper;
+package bunn.common.helper;
 
 import com.google.gson.Gson;
 

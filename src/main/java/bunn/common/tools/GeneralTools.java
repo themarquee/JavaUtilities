@@ -1,12 +1,9 @@
 package bunn.common.tools;
 
-import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Collection;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class GeneralTools {
 
@@ -143,17 +140,4 @@ public class GeneralTools {
 		return trace;
 	}
 
-	public static String toStringNonNullFields(Object ofInterest, ToStringStyle style) {
-		ReflectionToStringBuilder builder = new ReflectionToStringBuilder(ofInterest, style) {
-			@Override
-			protected boolean accept(Field field) {
-				try {
-					return super.accept(field) && field.get(ofInterest) != null;
-				} catch (IllegalAccessException e) {
-					return super.accept(field);
-				}
-			}
-		};
-		return builder.toString();
-	}
 }

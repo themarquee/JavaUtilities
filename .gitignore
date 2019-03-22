@@ -20,3 +20,4 @@ data
 .factorypath
 
 node_modules
+**/.attach_pid*

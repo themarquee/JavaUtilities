@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import bunn.common.Converter;
+import bunn.common.Visitor;
 import bunn.common.helper.CollectionHelper;
 import bunn.common.matcher.BasicMatcher;
 import bunn.common.matcher.Matcher;
@@ -54,6 +55,15 @@ public class CollectionTools {
 	@SuppressWarnings("unchecked")
 	public static <T, O> Collection<T> convert(Converter<O, T> converter, O... candidates) {
 		return new CollectionHelper<O>(candidates).convert(converter);
+	}
+
+	public static <O> void visit(Visitor<O> visitor, Collection<O> items) {
+		new CollectionHelper<O>(items).visit(visitor);
+	}
+
+	@SuppressWarnings("unchecked")
+	public static <O> void convert(Visitor<O> visitor, O... candidates) {
+		new CollectionHelper<O>(candidates).visit(visitor);
 	}
 
 	public static Set<String> mergeToSet(Collection<String> collectionA, Collection<String> collectionB) {

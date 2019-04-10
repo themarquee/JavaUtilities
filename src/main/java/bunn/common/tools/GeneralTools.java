@@ -27,6 +27,14 @@ public class GeneralTools {
 		return hasNItems(1, collection);
 	}
 
+	public static <T> boolean doesNotHaveExactlyOneItem(Collection<T> collection) {
+		return !hasOneItem(collection);
+	}
+
+	public static <T> boolean hasMultipleItems(Collection<T> collection) {
+		return hasItems(collection) && collection.size() > 1;
+	}
+
 	public static <T> boolean hasItems(T[] array) {
 		if (array == null) return false;
 		return array.length != 0;
@@ -43,6 +51,14 @@ public class GeneralTools {
 
 	public static <T> boolean hasOneItem(T[] array) {
 		return hasNItems(1, array);
+	}
+
+	public static <T> boolean doesNotHaveExactlyOneItem(T[] array) {
+		return !hasOneItem(array);
+	}
+
+	public static <T> boolean hasMultipleItems(T[] array) {
+		return hasItems(array) && array.length > 1;
 	}
 
 	public static String formatPhoneNumber(String phoneNumber) {
